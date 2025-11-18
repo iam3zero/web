@@ -1,0 +1,113 @@
+/* a{text-decoration: none; color: #000;}
+header{
+    width: 300px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+h1{
+    text-align: center;
+}
+h1 a{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav{
+    margin-top: 50px;
+}
+nav>ul{
+    border-top: 1px solid #ddd;
+}
+nav>ul>li{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+nav>ul>li:hover{
+    background: red;
+}
+nav>ul>li>a{
+    display: block;
+    padding: 20px;
+}
+nav>ul>li>ul{
+    display: none;
+    background: #ddd;
+}
+nav>ul>li:hover>ul{
+    display: block;
+}
+nav>ul>li>ul>li{
+    transition: .3s;
+}
+nav>ul>li>ul>li:hover{
+    background: black;
+}
+nav>ul>li>ul>li:hover a{
+    color: #fff;
+}
+nav>ul>li>ul>li>a{
+    display: block;
+    padding: 20px;
+} */
+
+a{text-decoration: none; color: #000;}
+header{
+    border-right: 1px solid #ccc;
+    width: 200px;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+h1 a{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    display: block;
+    color: green;
+}
+nav{
+    margin-top: 50px;
+}
+nav>ul{
+    display: block;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+nav>ul>li{
+    border-bottom: 1px solid #ccc;
+}
+nav>ul>li:hover>a{
+    background: green;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+nav>ul>li>a{
+    padding: 20px;
+    display: block;
+}
+nav>ul>li>ul{
+    display: none;
+}
+nav>ul>li>ul{
+    background: green;
+    transition: .3s;
+}
+nav>ul>li:hover>ul{
+    display: block;
+    padding: 20px;
+}
+nav>ul>li>ul>li>a{
+    padding: 20px 0;
+    display: block;
+    transition: .5s;
+}
+nav>ul>li>ul>li:hover>a{
+    color: #fff;
+}
+nav>ul>li>ul:hover{
+    transition: .3s;
+}
+nav ul li ul li a{}

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>선택자간의 우선 순위 알아보기</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			body{background: green; color: blue;}
+			#bgPage1{background: rgb(255, 195, 195); color: rgb(112, 111, 111);}
+			.bgPage2{background: yellow;}
+			span{color: red !important} /* !improtant 붙여주면 태그 아이디 다 무시하고 우선순위됨 */
+			.blueText{color: blue;}
+			</style> <!-- id가 제일 중요(우선순위1) body1점 id 100점 class 10점 -->
+			<!-- head보다 body에 직접 입력하는 태그가 더 우선순위지만 !important를 쓰면 가장 우선 -->
+	</head>
+
+	<body id="bgPage1" class="bgPage2">
+		<h1>선택자간의 우선 순위 알아보기</h1>
+		<hr />
+		<div>
+			<h2>굴 이야기</h2> 
+			<p class="bgPage2">
+				일명 <span class="blueText" style="color: blueviolet;">석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span class="blueText">꽃무더기</span>를 연상하게 한다. 굴은 <span class="blueText">3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지 풍부한 영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.
+			</p>
+		</div>
+	</body>
+</html>

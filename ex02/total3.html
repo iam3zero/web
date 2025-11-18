@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sementic</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        #wrap{width: 500px; background: rgb(255, 255, 255)/* 확인용 */; margin: 50px auto;}
+        #wrap h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            width: 100%;
+            border: 5px solid black;
+            padding: 20px;
+        }
+        header{
+            border: 5px solid black;
+            margin-bottom: 20px; /* mb20 이라고치면 자동입력됨 */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold
+        }
+        nav{
+            border: 5px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* 요소들 사이에 동일한 간격을 둔다 */
+        }
+        nav>div{
+            background: cyan;
+            padding: 20px;}
+        .nav1{width: 25%;}
+        .nav2{width: 43%;}
+        article{
+            border: 5px solid black;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold
+        }
+        article p{
+            text-align: left;
+            font-size: 14px;
+            font-weight:lighter;
+        }
+        article p span{
+            background: yellow;
+            line-height: 25px;
+            color: yellow;
+        }
+        article figure{
+            border: 5px solid black;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        article figure figcaption {
+            background: pink;
+            padding: 20px;
+        }
+
+        footer{
+            border: 5px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* 요소들 사이에 동일한 간격을 둔다 */
+            font-size: 20px;
+            font-weight: bold
+        }
+        footer>div{
+            background: red;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer1{width: 25%;}
+        .footer2{width: 43%;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Sementic</h1>
+        <div class="box">
+            <header>header
+                <nav>
+                    <div class="nav1">&nbsp;<!-- 공백이라는 뜻 --></div> 
+                    <div class="nav2">nav</div>
+                    <div class="nav1">&nbsp;</div>
+                </nav>
+            </header>
+            <article>article
+                <p><span>Lorem ipsum dolor sit amet consectetur amet consectetur<br>
+                    Totam tenetur laudantium quo rerum dicta incidunt <br>
+                    nulla repudiandae est ipsa delectus odit odit delectus odit</span>
+                </p>
+                <figure>
+                    <figcaption>figure</figcaption>
+                </figure>
+            </article>
+            <footer>
+                    <div class="footer1">&nbsp;<!-- 공백이라는 뜻 --></div> 
+                    <div class="footer2">footer</div>
+                    <div class="footer1">&nbsp;</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

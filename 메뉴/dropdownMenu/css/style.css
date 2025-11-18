@@ -1,0 +1,54 @@
+*{margin: 0;padding: 0;}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+nav{
+    background: rgb(0, 35, 131);
+    width: 100%;
+    height: 40px;
+}
+nav>ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items는 높이가 지정되어야 동작. height를 100% 주면 부모요소(nav)한테 받아온다. */
+}
+nav>ul>li{
+    position: relative;
+    
+}
+nav>ul>li>a{
+    padding: 10px 20px;
+    color: #fff;
+    
+}
+nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: hsl(224, 100%, 88%);
+    width: 100%;
+}
+/* nav>ul>li>a:hover{
+    background: #000000;
+} */
+nav>ul>li:hover>ul{
+    display: block;
+}
+nav>ul>li>ul>li{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+nav>ul>li>ul>li:hover{
+    background: #d8d8d8;
+}
+nav>ul>li>ul>li>a{}

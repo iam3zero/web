@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> CSS 적용하기 </title>
+	<meta charset="UTF-8" />
+		<style type="text/css">
+			body{text-align: center;}
+			h1{background: violet; color: #fff; padding: 10px 0;}
+			a{background: black; color: #fff; text-decoration: none;}
+			/* li에만 명령할 시 블록요소이기 때문에 전체 배경색을 가지게됨으로 a한테만 준다 */
+			/* text-decoration 텍스트 데코레이션 ~ 텍스트에 데코있는거 없애줘 */
+			li{line-height: 200%;}
+			h2{background: red; color: #fff; font-size: 16px; padding: 5px 0;}
+		</style>
+</head>
+
+<body>
+	<h1>CSS 적용하기</h1>
+	<hr />
+	<ul>
+		<li><a href="#Toy1">Toy1</a></li>
+		<li><a href="#Toy2">Toy2</a></li>
+		<li><a href="#Toy3">Toy3</a></li>
+	</ul>
+	<hr />
+	<h2 id="Toy1">회전 동물 알파벳</h2>
+	<img src="images/toy1.jpg" width="267" height="516" alt="회전 동물 알파벳" />
+	<hr />
+	<h2 id="Toy2">애벌레</h2>
+	<img src="images/toy2.jpg" width="516" height="391" alt="애벌레" />
+	<hr />
+	<h2 id="Toy3">스스로 움직이는 공</h2>
+	<img src="images/toy3.jpg" width="347" height="516" alt="스스로 움직이는 공" />
+	<hr />
+	<p><a href="#">위로 이동하기</a></p>
+	
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{margin: 20px;}
+.box{border: 5px solid #ddd; padding: 20px;  box-sizing: border-box;margin-bottom: 20px;}
+
+.container{border: 1px solid #ccc; margin-bottom: 10px;  box-sizing: border-box;}
+.container>div{
+    padding: 20px 40px;
+    background: green;
+    width: 300px;
+    margin: 10px 0;
+   
+}
+.container>div:nth-child(odd){background: rgb(255, 140, 0);}
+
+.content1 #opt1{
+    display: flex;
+    flex-direction: row;
+    /* 기본값. 주축 가로지정 왼쪽->오른쪽 정렬 */
+}
+.content1 #opt2{
+    display: flex;
+    flex-direction: row-reverse;
+    /* 주축 가로지정 오른쪽->왼쪽 정렬 */
+}
+.content1 #opt3{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 1000px) {
+   .content1  #opt3{
+        flex-direction:column;
+    }
+    /* 기본값. 주축 가로지정 왼쪽->오른쪽 정렬 이지만! max-width:1000px을 줘서 그만큼 창이 줄어들면 column값 때문에 주축 세로지정되고 위쪽->아래쪽 정렬됨*/
+}
+.content1 #opt4{
+    display: flex;
+    flex-direction: column-reverse;
+    /* 주축 세로지정. 아래쪽->위쪽 정렬 */
+
+}
+
+
+
+.content2 #opt11{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media screen and (max-width: 1000px) {
+    .content2 #opt11{
+        flex-wrap: wrap;
+    }
+    /* 플렉스 항목을 한줄로 표시(창 크기 상관없이. 플렉스 항목 줄어듦). 기본값! 하지만 1000px만큼 줄어들면 항목을 여러줄로 표시함 */
+}
+.content2 #opt12{
+    display: flex;
+    flex-wrap: wrap;
+    /* 플렉스 항목을 여러줄로 표시(창 크기에 따라) */
+}
+.content2 #opt13{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* 플렉스 항목을 (교차축의 시작과 끝점 바뀐 상태로!) 여러줄로 표시 */
+}
+
+
+
+.content3 #opt111{
+    display: flex;
+    justify-content: start;
+}
+.content3 #opt112{
+    display: flex;
+    justify-content: end; /* 끝에 맞춰서 배치. 순서바뀜X */
+}
+.content3 #opt113{
+    display: flex;
+    justify-content: center;
+}
+.content3 #opt114{
+    display: flex;
+    justify-content: space-between; /* 양 옆 여백동일 정렬 */
+}
+.content3 #opt115{
+    display: flex;
+    justify-content: space-around;
+}
+.content3 #opt116{
+    display: flex;
+    justify-content: space-evenly;
+}

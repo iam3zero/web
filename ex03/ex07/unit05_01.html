@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>이미지, 색상, 글자 투명도 조정하기</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			/* opacity: .8;  100%=1 / 0은 안보이는거 1은 보이는거 opacity = 투명도 */
+			/* no-repeat : 이미지 패턴처럼 반복X 하나만 쓸거야 */
+/* 			*{margin: 0;padding: 0;}
+			body{
+				background: #ccc url(./images/bg_gray.png) no-repeat;
+			}
+			
+			div{
+				background: url(./images/circle.png) no-repeat;
+				width: 530px;
+				height: 424px;
+				opacity: .8; 
+				margin: 0 auto;
+				padding-top: 150px;
+				padding-left: 20px;
+			}
+			p{
+				
+			}
+			.textBox{
+				width: 25%;
+				background: hsla(180,100%,100%,.7);
+				padding: 20px;
+				opacity: 0.7;
+				margin: 0 auto;
+				border-radius: 20px;
+			}
+			.people{
+				font: 3em "Arial Black";
+				padding-top: 130px;
+				color: rgba(255,255,255,.5);
+			} */
+
+			*{margin: 0;padding: 0;}
+
+			body{
+				background: #ccc url(./images/bg_gray.png)no-repeat;
+			}
+			div{
+				background: url(./images/circle.png) no-repeat;
+				width: 530px;
+				height: 424px;
+				opacity: .8;
+				margin: 0 auto;
+				padding-top: 150px;
+				padding-left: 20px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.textBox{
+				width: 25%;
+				background: hsla(180,100%,100%,.7); /* opacity는 모든 요소에 다 적용되기 때문에 따로 하고싶으면 각 요소에 색상값을 지정해줘야한다 */
+				padding: 20px;
+				border-radius: 20px;
+				margin: 0 auto;
+				/* opacity: .7; */}
+			.people{
+				font: 3em "Arial Black";
+				padding-top: 130px;
+				color: rgba(255,255,255,.5);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p class="textBox">
+					Freedom is not worth having
+					if it does not include the freedom to make mistakes.				
+			</p>
+			<p class="people">- Mahatma Gandhi - <p>
+		</div>
+	</body>
+</html>

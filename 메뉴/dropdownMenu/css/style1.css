@@ -1,0 +1,42 @@
+a{text-decoration: none; color: #000;}
+
+nav{
+    background: rgb(91, 167, 255);
+    padding: 20px 0;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    position: relative;
+}
+nav>ul>li>a{
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    background: rgb(91, 167, 255);
+    top: 36px;
+    width: 100%;
+    text-align: center;
+}
+nav>ul:hover>li>ul{
+    display: block;}
+nav>ul>li>ul>li{
+    transition: .5s;
+}
+nav>ul>li>ul>li:hover{
+    background: rgba(20, 0, 136, 0.582);
+}
+nav>ul>li>ul>li>a{
+    display: block;
+    /* inline 요소라 padding top, bottom 안먹혀서 block처리함 */
+    padding: 20px;
+}
+nav>ul>li>ul>li>a:hover{
+    color: #fff;}
+/* nav>ul>li>ul>li:hover>a에다 줘도 무방함 */

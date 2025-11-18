@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 그라데이션 상자와 회원 가입 버튼 만들기 </title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body, button { 
+				font-family: "맑은 고딕", 돋움, sans-serif; 
+				}
+			body{
+				/* background: linear-gradient(to right bottom, blue, white); */
+				background: linear-gradient(45deg, blue, white);
+				width: 100%;
+				height: 100vh;
+			}
+			#memberBox{
+				background: #06f;
+				background: linear-gradient(to bottom, #06f, white 50%, #06f); /* 그라디언트 밑에서부터 06f색상으로 시작 50%부분에서 white주고 다시 06f로 끝내 */
+				
+			}
+			.box1{
+				width: 300px;
+				height: 200px;
+				background: radial-gradient(red, yellow, green); /* 그라디언트 (바텀 안썼으니 기본값 위에서부터) 레드 옐로우 그린 으로*/
+			}
+			.box2{
+				width: 300px;
+				height: 200px;
+				background: radial-gradient(circle, red, yellow, green); /* 래디얼 관계없이 서클 주면 직사각형이여도 동그랗게*/
+			}
+			.box3{
+				width: 300px;
+				height: 300px;
+				background: radial-gradient(circle at 20% 20%, red, yellow, green);
+				/* 그라디언트 모양이랑 위치 같이 정해준 뒤 콤마! */
+			}
+			.box4{
+				width: 300px;
+				height: 300px;
+				background: radial-gradient(yellow, white 30%, orange 60%);
+			}
+			.box5{
+				width: 300px;
+				height: 300px;
+				background: linear-gradient(to bottom, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="memberBox">
+			<p>아직 infoPub 회원이 아니세요? </p>
+			<button class="btnOrange">회원 가입 하기</button>
+		</div>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</body>
+</html>

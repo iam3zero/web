@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic tag</title>
+    <style>
+        *{margin: 0; padding: 0;}
+            #wrap{
+            background: yellow;
+            margin: 50px auto;
+            width: 500px;
+            }
+            #wrap h1{
+            text-align: center;
+            margin-bottom: 20px;
+            }
+            .box{border: 5px solid black; padding: 20px;}
+            header{
+                border: 5px solid black;
+                padding: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;}
+            nav{
+                border: 5px solid black;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav>div{
+                background: #9bdfff;
+                
+            }
+            .nav1{width: 25%;}
+            .nav2{width: 43%;}
+            article{
+                border: 5px solid black;
+                padding: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            article p {
+                font-size: 14px;
+                font-weight: lighter;
+                text-align: left;
+                line-height: 30px;
+            }
+            article p span{
+                background: #ccc;
+                color: #ccc;
+            }
+            figure{
+                border: 5px solid black;
+                padding: 20px;
+            }
+            figcaption{
+                padding: 20px;
+                background: pink;
+            }
+            footer{
+                border: 5px solid black;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;}
+            footer>div{
+                background: blue;
+                padding: 10px;
+            }
+            .footer1{width: 20%;}
+            .footer2{width: 41%;}
+    </style>
+
+<head>
+
+</head>
+<body>
+    <div id="wrap">
+        <h1>Sementic</h1>
+            <div class="box">
+                <header>header
+                    <nav>
+                        <div class="nav1">&nbsp</div>
+                        <div class="nav2">nav</div>
+                        <div class="nav1">&nbsp</div>
+                    </nav>
+                </header>
+                <article>article
+                    <p><span>Lorem ipsum dolor sit amet consectetur amet consectetur<br>
+                    Totam tenetur laudantium quo rerum dicta incidunt <br>
+                    nulla repudiandae est ipsa delectus odit odit delectus odit</span>
+                </p>
+                <figure>
+                    <figcaption>figure</figcaption>
+                </figure>
+                </article>
+                <footer>
+                    <div class="footer1">&nbsp</div>
+                    <div class="footer2">footer</div>
+                    <div class="footer1">&nbsp</div>
+                </footer>
+            </div>
+    </div>
+</body>
+</html>
